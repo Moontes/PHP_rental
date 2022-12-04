@@ -37,7 +37,7 @@
 					<tr>
 						<th scope="col">
 						</th>
-						<th scope="col">Samochód</th>
+						<th scope="col">Urządzenie</th>
 						<th scope="col">Wypożyczył</th>
 						<th scope="col">Koszt</th>
 						<th scope="col">Zwrot</th>
