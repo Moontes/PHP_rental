@@ -1,7 +1,7 @@
 # PHP_rental
 Projekt PHP - WSB2022
 
-Tutaj będzie link do strony LIVE na dniach (problemy z serwerem) - ...
+Tutaj będzie link (i dodamy na moodle) do strony LIVE na dniach (problemy z serwerem) - ...
 
 
 >Projekt został zrobiony na XAMPPIE.
