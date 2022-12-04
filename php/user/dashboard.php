@@ -47,10 +47,10 @@ else :
                 <div class="reservations--header">
                     <div class="reservation">
                         <div class="reservation--itemImg">
-                            Zjdęcie
+                            Zdjęcie
                         </div>
                         <div class="reservation--itemName">
-                            Marka i model
+                            Marka i typ
                         </div>
                         <div class="reservation--dateFrom">
                             od kiedy
