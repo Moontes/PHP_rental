@@ -1,7 +1,7 @@
 # PHP_rental
 Projekt PHP - WSB2022
 
-Tutaj będzie link (i dodamy na moodle) do strony LIVE na dniach (problemy z serwerem) - ...
+Link do aplikacji - http://wsb.trueskafka.pl/
 
 
 >Projekt został zrobiony na XAMPPIE.
