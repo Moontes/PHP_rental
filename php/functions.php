@@ -19,7 +19,7 @@ function generate_dashboard() //tworzy dashboard klienta (zawiera zapytanie do b
     CloseConDB($mysqli);
 }
 
-function reserve($name, $surname, $phone_number, $item_id, $termin, $days, $hours)  //funkcja odpowiedzialna za rezerwacje, 
+//function reserve($name, $surname, $phone_number, $item_id, $termin, $days, $hours)  //funkcja odpowiedzialna za rezerwacje 
 {
     global $mysqli;
 
@@ -118,7 +118,7 @@ function changeItemStatus($item_id)
 }
 
 
-function reservation($customerID, $item_id, $termin, $days, $hours) //uzywana w dashboard.php
+function reservation($customerID, $item_id, $termin, $days, $hours) ////funkcja odpowiedzialna za rezerwacje 
 {
     $mysqli = OpenConnDB();
 
@@ -156,7 +156,7 @@ function reservation($customerID, $item_id, $termin, $days, $hours) //uzywana w 
 }
 
 
-function getAllItems()
+function getAllItems() //dashboard
 {
     $sql = "SELECT * FROM items";
     $mysqli = OpenConnDB();
