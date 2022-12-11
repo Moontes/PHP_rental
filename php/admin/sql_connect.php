@@ -1,6 +1,6 @@
 <?php
 
-function OpenConnDB()
+function OpenConnDB() //odpowiada za polaczenie aplikacji z baza danych
 {
 	$db_server = 'localhost';
 	$db_user = 'root';
@@ -12,7 +12,7 @@ function OpenConnDB()
 	return $db_conn;
 }
 
-function CloseConDB($conn)
+function CloseConDB($conn) //odpowiada za zamykanie polaczenia z baza
 {
 	$conn->close();
 }
