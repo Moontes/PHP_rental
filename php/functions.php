@@ -107,7 +107,7 @@ function selectAvaliableItems()
 }
 
 
-function changeItemStatus($item_id)
+function changeItemStatus($item_id) //do rozbudowy
 {
     $mysqli = OpenConnDB();
     $changeStatus_querry = "UPDATE items SET available = 0 WHERE id = $item_id";
@@ -156,7 +156,7 @@ function reservation($customerID, $item_id, $termin, $days, $hours) ////funkcja 
 }
 
 
-function getAllItems() //dashboard
+function getAllItems() //dashboard do pozniejszego uzytku
 {
     $sql = "SELECT * FROM items";
     $mysqli = OpenConnDB();
