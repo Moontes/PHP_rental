@@ -26,7 +26,7 @@
                     <button type="submit" name="submit">Zarejetruj</button>
 
                     <span class="errorMessage">
-                        <?php
+                        <?php   //obsługa błędów jesli zmienna superglobalna zwraca 'error' to wykonuje ifa, zaleznie od tego co ta zmienna zawiera w tablicy
                         if (isset($_GET["error"])) :
                             if ($_GET["error"] == "empty_fields") {
                                 echo 'Podaj poprawny login i hasło aby zalogować się do konta';
