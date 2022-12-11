@@ -1,6 +1,6 @@
 <?php
-session_start();
+session_start(); //otwiera aktualna sesje
 $_SESSION = [];
-session_destroy();
+session_destroy(); //zamyka sesje=wylogowaniee
 
 header("Location: login.php");
