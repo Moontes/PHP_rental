@@ -1,10 +1,10 @@
 <?php
-session_start();
+session_start(); //sprawdza czy jestesmy zalogowani
 if (!isset($_SESSION["customerID"])) :
 
-    header('location: login.php');
+    header('location: login.php'); //jsli nie to przekierowuje do strony z logowaniem
 
-else :
+else : //jesli tak to wyswietla dashboard klienta i ewentualnie informacje o zamowieniach jesli je posiada
 
 
 ?>
