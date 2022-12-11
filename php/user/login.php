@@ -23,7 +23,7 @@
 
                     <span class="errorMessage">
                         <?php
-
+                        //obsługa błędów jesli zmienna superglobalna zwraca 'error' to wykonuje ifa, zaleznie od tego co ta zmienna zawiera w tablicy
                         if (isset($_GET["error"])) :
 
                             if ($_GET["error"] == "empty_fields") {
