@@ -118,7 +118,7 @@ function changeItemStatus($item_id)
 }
 
 
-function reservation($customerID, $item_id, $termin, $days, $hours)
+function reservation($customerID, $item_id, $termin, $days, $hours) //uzywana w dashboard.php
 {
     $mysqli = OpenConnDB();
 
