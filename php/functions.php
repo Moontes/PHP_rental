@@ -92,7 +92,7 @@ function getUnavaliableItems() //tak jak wyzej dla niedostepnych
     CloseConDB($mysqli);
 }
 
-function selectAvaliableItems()
+function selectAvaliableItems() //formularz, wybieranie urzadzenia
 {
     $sql = "SELECT id,name FROM items WHERE available >= 1";
     $mysqli = OpenConnDB();
