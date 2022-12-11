@@ -49,7 +49,7 @@
 				if (isset($_SESSION["adminId"])):
 
 				?>
-					<?php
+					<?php //generuje dashboard na podstawie danych z bazy, ktore sa brane za pomoca ponizszej funkcji
 
 					$rows = generate_dashboard();
 
