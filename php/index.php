@@ -85,9 +85,9 @@ session_start();
 			</div>
 			<div class="row d-flex justify-content-center">
 
-				<?php
-				$avaliableItems = getAvaliableItems();
-				foreach ($avaliableItems as $avaliableItem) :
+				<?php //wyswietlanie dostępnych urządzeń
+				$avaliableItems = getAvaliableItems(); //funkcja z pliku functions.php
+				foreach ($avaliableItems as $avaliableItem) : //pętla ktora wypisuje w widoku wszystko co zwrócila funkcja
 				?>
 					<div class="col-lg-4 col-md-6 col-sm-12 mt-4">
 						<div class="card">
@@ -127,7 +127,7 @@ session_start();
 			<div class="row d-flex justify-content-center">
 
 				<?php
-				$rows = getUnavaliableItems();
+				$rows = getUnavaliableItems(); //analogicznie jak poprzednia funkcja z dostepnymi, tym razem dla niedostepnych
 				if (is_array($rows) || is_object($rows)) :
 					foreach ($rows as $r) {
 						echo '<div class="col-lg-3 col-md-6 col-sm-12 mt-3">';
@@ -154,13 +154,13 @@ session_start();
 	<section id="reservation">
 		<div class="container-fluid">
 			<h1 class="text-center pt-4 pb-4 font-weight-bold">ZAREZERWUJ</h1>
-
+			//warunek sprawdzajacy czy uzytkownik jest zalogowany, jesli nie to jest info ze trzeba sie zalogowac
 			<?php if (!isset($_SESSION["customerID"])) : ?>
 				<div class="col-12 text-center text-danger p-5">
 					<h1>Zaloguj się do panelu aby dokonąć rezerwacji... </h1>
 					<a href="user/login.php" class="btn btn-primary">Zaloguj</a>
 				</div>
-			<?php else : ?>
+			<?php else : ?> //jesli zalogowany to pokazuje formularz z nizej
 
 
 
