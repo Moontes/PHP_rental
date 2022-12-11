@@ -20,7 +20,7 @@
                     <input type="password" name="password" placeholder="Wprowadź hasło" style="margin-bottom: 20px">
                     <button type="submit" name="submit">Login</button>
 
-                    <span class="errorMessage">
+                    <span class="errorMessage">   //obsługa błędów jesli zmienna superglobalna zwraca 'error' to wykonuje ifa, zaleznie od tego co ta zmienna zawiera w tablicy
                         <?php
                         if (isset($_GET["error"])) :
                             if ($_GET["error"] == "empty_fields") {
